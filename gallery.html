@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gallery | Mount Holly Senior Living</title>
+  <meta name="description" content="A glimpse of everyday life at Mount Holly Senior Living: shared meals, friendship, personal care, and comfortable spaces.">
+  <meta name="theme-color" content="#0f2b22">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mount Holly Senior Living">
+  <meta property="og:title" content="Gallery | Mount Holly Senior Living">
+  <meta property="og:description" content="A glimpse of everyday life at Mount Holly Senior Living: shared meals, friendship, personal care, and comfortable spaces.">
+  <meta property="og:image" content="images/nurse-resident.jpg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="script.js?v=5" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="topbar" role="region" aria-label="Location and email">
+    <div class="wrap">
+      <p class="topbar-location">Charlotte, North Carolina <span class="dot" aria-hidden="true"></span> A private home for six residents</p>
+      <a href="mailto:info@mounthollyseniorliving.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span>info@<wbr>mounthollyseniorliving.com</span></a>
+    </div>
+  </div>
+
+  <!-- 01. Shared header & navigation -->
+  <header class="header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Mount Holly Senior Living, home">
+        <img src="images/brand-mark.webp" alt="Mount Holly Senior Living" width="340" height="279">
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>
+        <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h10"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span class="menu-label">Menu</span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="living.html">Our Home</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="button button-sm" href="contact.html">Schedule a Visit</a>
+        <div class="nav-extra">
+          <span>10120 Mount Holly Road, Charlotte, NC 28214</span>
+          <a href="mailto:info@mounthollyseniorliving.com">info@<wbr>mounthollyseniorliving.com</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 02. Page content -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap page-hero-inner">
+        <div>
+          <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Gallery</li></ol>
+          <p class="eyebrow">A glimpse of the experience</p>
+          <h1>Warmth in<br><em>the everyday.</em></h1>
+          <p class="lead">Meals, friendships, and comfortable spaces that reflect the life we envision here.</p>
+        </div>
+        <div class="photo"><img src="images/gallery-13.jpg" alt="Older friends gathered around a table sharing stories (temporary photography)" width="1800" height="1200" fetchpriority="high"><span class="photo-note">Temporary photography</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="gallery-title" style="padding-top:clamp(48px,6vw,80px)">
+      <h2 class="visually-hidden" id="gallery-title">Photo gallery</h2>
+      <p class="photo-notice"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></svg><span>These are temporary, illustrative photos. Professional photography of the actual residence will replace them soon. The best way to see the home is in person.</span></p>
+      <div class="filters" role="group" aria-label="Filter photos" hidden><button class="filter" type="button" data-filter="all" aria-pressed="true">All photos<span class="count">15</span></button><button class="filter" type="button" data-filter="together" aria-pressed="false">Time together<span class="count">5</span></button><button class="filter" type="button" data-filter="care" aria-pressed="false">Personal care<span class="count">8</span></button><button class="filter" type="button" data-filter="spaces" aria-pressed="false">Meals &amp; spaces<span class="count">2</span></button></div>
+      <p class="visually-hidden" id="gallery-status" role="status" aria-live="polite"></p>
+      <div class="masonry" id="gallery-grid">
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-01.jpg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="1140" height="655" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="spaces"><button class="tile" type="button" aria-label="View larger: Welcoming shared spaces"><img src="images/gallery-02.webp" alt="Spacious furnished living and activity room (temporary photography)" width="1800" height="1246" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Welcoming shared spaces</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-03.jpg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="540" height="360" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-04.jpg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="683" height="360" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="together"><button class="tile" type="button" aria-label="View larger: Family connection"><img src="images/gallery-05.jpeg" alt="Older adults and visitors spending time together (temporary photography)" width="1800" height="1200" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Family connection</figcaption></figure>
+        <figure data-category="spaces"><button class="tile" type="button" aria-label="View larger: Meals enjoyed together"><img src="images/gallery-06.webp" alt="Older adults sharing a meal (temporary photography)" width="1400" height="733" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Meals enjoyed together</figcaption></figure>
+        <figure data-category="together"><button class="tile" type="button" aria-label="View larger: Shared activities"><img src="images/gallery-07.jpg" alt="Older adults taking part in a seated group activity (temporary photography)" width="1024" height="683" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Shared activities</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-08.jpg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="1800" height="1034" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-09.webp" alt="A caregiver offering personal support to an older adult (temporary photography)" width="850" height="567" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="together"><button class="tile" type="button" aria-label="View larger: Friendship and laughter"><img src="images/gallery-10.webp" alt="A diverse group of older adults smiling together (temporary photography)" width="960" height="480" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Friendship &amp; laughter</figcaption></figure>
+        <figure data-category="together"><button class="tile" type="button" aria-label="View larger: Time to connect"><img src="images/gallery-11.jpg" alt="Older adults enjoying conversation (temporary photography)" width="1024" height="672" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Time to connect</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-12.jpg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="678" height="452" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="together"><button class="tile" type="button" aria-label="View larger: Everyday companionship"><img src="images/gallery-13.jpg" alt="A diverse group of older adults gathered around a table (temporary photography)" width="1800" height="1200" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Everyday companionship</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-14.jpeg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="1024" height="672" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+        <figure data-category="care"><button class="tile" type="button" aria-label="View larger: Personal care and support"><img src="images/gallery-15.jpg" alt="A caregiver offering personal support to an older adult (temporary photography)" width="800" height="371" loading="lazy" decoding="async"><span class="tile-zoom"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span></button><figcaption>Personal care &amp; support</figcaption></figure>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <div class="lightbox-bar"><span class="lightbox-count" aria-live="polite"></span><button class="lb-btn" type="button" data-lb="close" aria-label="Close photo viewer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="lightbox-stage">
+        <button class="lb-btn lb-prev" type="button" data-lb="prev" aria-label="Previous photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 5-7 7 7 7"/></svg></button>
+        <img alt="">
+        <button class="lb-btn lb-next" type="button" data-lb="next" aria-label="Next photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7"/></svg></button>
+      </div>
+      <p class="lightbox-caption"></p>
+    </dialog>
+  </main>
+
+  <!-- 03. Shared invitation -->
+  <section class="invitation" aria-labelledby="invite-title">
+    <div class="wrap">
+      <div class="invitation-card" data-reveal>
+        <div class="photo"><img src="images/conversation.jpg" alt="Five older adults laughing together on a sofa (temporary photography)" width="1024" height="672" loading="lazy" decoding="async"></div>
+        <div class="invitation-body">
+          <p class="eyebrow">A personal invitation</p>
+          <h2 id="invite-title">Come feel the <em>difference.</em></h2>
+          <p>See the home. Meet the team. Picture the possibilities. Visits are relaxed, private, and on your schedule.</p>
+          <div class="button-row">
+            <a class="button" href="contact.html">Schedule a Private Visit <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+          <p class="fine">Prefer email? Write to us at <a href="mailto:info@mounthollyseniorliving.com">info@<wbr>mounthollyseniorliving.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. Shared footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/brand-mark-light.webp" alt="Mount Holly Senior Living" width="340" height="279" loading="lazy" decoding="async">
+          <p>A private residential home in Charlotte where six residents enjoy their own rooms, personal care, and the comfort of being known.</p>
+          <p class="footer-tagline">Exceptional Care. Elevated Living.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="living.html">Our Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h2>Visit &amp; contact</h2>
+          <address>10120 Mount Holly Road<br>Charlotte, NC 28214</address>
+          <ul>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=10120+Mount+Holly+Road+Charlotte+NC+28214" target="_blank" rel="noopener noreferrer">Get directions<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="mailto:info@mounthollyseniorliving.com">info@<wbr>mounthollyseniorliving.com</a></li>
+          </ul>
+          <p class="fine">Phone &amp; fax: coming soon</p>
+        </div>
+        <div class="footer-col">
+          <h2>Connect with us</h2>
+          <div class="social-icon-row" aria-label="Social media">
+            <button type="button" data-social="Facebook" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 21v-8h3l.5-4H14V7c0-1 .3-2 2-2h2V1.5C17 1 16 1 15 1c-3 0-5 2-5 5v3H7v4h3v8z"/></svg></button>
+            <button type="button" data-social="Instagram" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2"/></svg></button>
+            <button type="button" data-social="LinkedIn" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 8h4v13H4zM10 8h4v2c1-2 3-2 4-2 3 0 4 2 4 5v8h-4v-7c0-2 0-3-2-3s-2 1-2 3v7h-4z"/><circle cx="6" cy="4" r="2"/></svg></button>
+            <button type="button" data-social="Yelp" aria-label="Yelp" title="Yelp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 2c0-1 1-1 2-1l2 1v8l-1 1-3-9zM4 8l5 4v2l-7-1-1-2 3-3zM3 17l7-2 1 1-4 6H5l-2-5zM14 16l5 4v2l-5 1-2-6 2-1zM16 13l5-3 2 1v5l-7-1z"/></svg></button>
+            <button type="button" data-social="YouTube" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 5h12a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4zm4 4v6l6-3z" fill-rule="evenodd"/></svg></button>
+          </div>
+          <p class="social-status" role="status"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Mount Holly Senior Living &middot; Charlotte, North Carolina</p>
+        <p>Photography shown is temporary and illustrative.</p>
+        <a class="to-top" href="#top">Back to top <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
